@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', 'je', 'proradio'];
+var niz2=[];
+for(let i=0;i<arr.length;i++){
+    if(arr[i].length>=5 && arr[i]===arr[i].toUpperCase()){
+        niz2.push(arr[i]);
+    }
+}
+document.write("String duljine 5 ili vise znakova sa svim velikim znakovima jest: " +niz2);
+console.log(niz2);
+ </script>
+</body>
+</html>

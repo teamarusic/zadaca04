@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+function random(a , b) {
+    for (var i = 0; i < 5; i++) {
+        var randomBroj = Math.floor(Math.random() * (b - a + 1)) + a;
+        console.log(randomBroj);
+    }
+}
+var a =parseInt (prompt("Unesite prvi broj:"));
+var b = parseInt(prompt("Unesite drugi broj:"));
+random(a, b);
+
+ </script>
+</body>
+</html>

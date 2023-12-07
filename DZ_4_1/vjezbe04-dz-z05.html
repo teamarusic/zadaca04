@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+const obj1={firstName:"Marko", lastName:"Maric", age:40, eyeColor:"black"};
+const obj2={firstName:"Ivo", lastName:"Ivic", age:20, eyeColor:"blue"};
+const obj3={firstName:"Pero", lastName:"Peric", age:27, eyeColor:"brown"};
+const objekti = [obj1, obj2, obj3];
+for (let i = 0; i < objekti.length; i++) {
+    const obj = objekti[i];
+    document.write("Obj s indeksom: " + i + "-->");
+    for (let kljuc in obj) {
+        const vrijednost = obj[kljuc];
+        document.write("   " + kljuc + ": " + vrijednost);
+    }
+    document.write("</br>");
+}
+ </script>
+</body>
+</html>

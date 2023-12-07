@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+ function jeLiSavrsen(broj) {
+    var suma = 0;
+    for (let i = 1; i < broj; i++) {
+        if (broj % i === 0) {
+            suma += i;
+        }
+    }
+    return suma === broj;
+}
+function ispis(x) {
+    for (let i = 1; i <= x; i++) {
+        if (jeLiSavrsen(i)) {
+            document.write("Savrseni brojevi su: " +i+ "</br>");
+            console.log(i);
+        }
+    }
+}
+var x= prompt("Do kojeg broja želiš ispis savršenih brojeva?");
+ispis(x);
+ </script>
+</body>
+</html>

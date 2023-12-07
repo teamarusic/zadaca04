@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+let x=function(broj)
+{
+    if(typeof(broj)==="number"){
+        return broj*broj;
+    }
+    else 
+    return "Greska, nije broj";
+}
+document.write("Primjer za broj: </br>");
+document.write(x(5)+ "</br>");
+console.log(x(5));
+document.write("Primjer za String: </br>");
+document.write(x("Nešto"));
+</script>
+
+
+</body>
+</html>

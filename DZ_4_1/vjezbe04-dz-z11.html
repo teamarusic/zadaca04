@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    const polje = ['2023-11-29', -1, 0, -0.5,0.5, 0, 1.2,1.8,2, 3, 4, 6, 9, 12, 7, 6, 6,8,5,4,2,3,2,1,0]; 
+    const datum=polje[0];
+        var zbroj = 0;
+        var min = polje[1];
+        var max = polje[1];
+        for(let i = 1; i < polje.length; i++){
+            zbroj += polje[i]
+            if(polje[i] < min)
+                min = polje[i]
+            if(polje[i] > max)
+                max = polje[i]
+        }
+        var prosjek = zbroj/(polje.length - 1);
+        console.log("Datum: " + datum);
+        console.log("Minimalna temperatura je : " + min);
+        console.log("Maksimalna temperatura je : " + max);
+        console.log("Prosjecna temperatura je: " + prosjek);
+ </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+ var polje = new Array(1,2,3,4,7,8,5,6,9, 55, 12, 4,85);
+ //a)
+ document.write("Inicijalna duzina polja polje jest: "+ polje.length + "<br/>");
+ document.write("--------------------------------- <br/>")
+ //b)
+for(let i=0;i<=polje.length-1;i++){
+    for(let j=i+1;j<polje.length;j++){
+        if(polje[j]>polje[i]){
+            var pom=polje[j];
+            polje[j]=polje[i];
+            polje[i]=pom;
+        }
+    }
+}
+document.write("Sortirano od najvećeg: " +polje+ "<br/>");
+document.write("--------------------------------- <br/>")
+//c)
+polje.reverse()
+        document.write("Sortirano od najmanjeg: " +polje+ "<br/>" );
+document.write("--------------------------------- <br/>")
+//d)
+polje.pop();
+document.write("Sortirani od najmanjeg bez zadnjeg "+ polje+ "<br/>");
+document.write("--------------------------------- <br/>")
+//e)
+polje.push(19,20);
+document.write("S nova dva člana: "+ polje + "<br/>");
+document.write("--------------------------------- <br/>")
+//f)
+var polje2=new Array("Banana", "Orange", "Apple", "Mango" );
+var final_polje=polje.concat(polje2);
+document.write("Spojena dva polja su: "+final_polje);
+
+
+ </script>
+</body>
+</html>
